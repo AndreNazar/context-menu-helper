@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+
+  // Основные стили для CMH
+  .cmh-v1{
+    position: fixed;
+    display: none;
+    max-width: 200px;
+    white-space: nowrap;
+    background-color: #ffffff;
+    color: #242424;
+    padding: 1em;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 #0002;
+    &.active{
+      display: grid;
+    }
+  // --- ----
+
+    a{
+      text-decoration: 0;
+      color: #242424;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .wrapper{
+    width: 1024px;
+    .exemple-block-1{
+      color: #242424;
+      margin-top: 1em;
+      padding: 1em;
+      background-color: #ffffff;
+    }
+  }
+}
