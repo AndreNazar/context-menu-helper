@@ -16,15 +16,24 @@
 .main-container{
   width: 100%;
   display: grid;
-  justify-content: center;
+  justify-items: center;
 
-  // Основные стили для CMH
+  .heading{
+    text-align: center;
+    margin-top: 1em;
+    h1{margin: 0}
+    p{margin: 0}
+  }
+
+  // Основные стили для меню
   .cmh-v1{
-    position: fixed;
+    position: absolute;
     display: none;
+    left: 0px;
+    width: fit-content;
     max-width: 200px;
-    white-space: nowrap;
     background-color: #ffffff;
+    overflow: auto;
     color: #242424;
     padding: 1em;
     border-radius: 3px;
@@ -32,7 +41,7 @@
     &.active{
       display: grid;
     }
-  // --- ----
+  // -------- ----- --- ----
 
     a{
       text-decoration: 0;
@@ -43,13 +52,40 @@
     }
   }
 
+
+  // Основные стили для подсказки
+  .cmh-v2{
+    position: absolute;
+    display: none;
+    left: 0;
+    max-width: 200px;
+    background-color: #ffffff;
+    color: #242424;
+    padding: 1em;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 #0002;
+    &.active{
+      display: grid;
+    }
+  // -------- ----- --- ---------
+    p{margin: 0}
+  }
+
   .wrapper{
-    width: 1024px;
-    .exemple-block-1{
-      color: #242424;
-      margin-top: 1em;
-      padding: 1em;
+    width: 90%;
+    .exemple-block{
+      display: grid;
+      justify-items: center;
+      margin-top: 2em;
+      padding: 2em;
       background-color: #ffffff;
+      p{
+        font-size: 18px;
+        color: #242424;
+      }
+      img{
+        width: 60px;
+      }
     }
   }
 }
